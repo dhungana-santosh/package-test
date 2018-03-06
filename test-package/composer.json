@@ -1,0 +1,25 @@
+{
+    "name": "santosh/test-vendor",
+    "description": "Test package for practice",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "santosh.softnep",
+            "email": "santosh.softnep@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "TestVendor\\TestPackage\\":"src/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "TestVendor\\TestPackage\\TestPackageServiceProvider"
+            ]
+        }
+    }
+}
